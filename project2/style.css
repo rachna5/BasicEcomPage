@@ -1,0 +1,171 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* Navigation */
+#navbar {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+#navbar i {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+/* Header Content */
+#center {
+    padding: 40px 50px;
+    color: #000;
+}
+
+#center h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* Text & Buttons Section */
+#center-inside {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#center-inside p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 600px;
+}
+
+#right {
+    width: 25%;
+    min-width: 200px;
+}
+
+.elem {
+    padding: 5px 0;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.elem i {
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.elem:hover i {
+    opacity: 1;
+}
+
+.elem:hover a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Bottom Image */
+#bottom-image {
+    width: 100%;
+    height: 34.2vh;
+    overflow: hidden;
+}
+
+#bottom-image img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    object-position: center;
+    /* background-position: 0 50%; */
+}
+
+/* Responsive */
+@media (max-width: 665px) {
+    #navbar {
+        text-align: right;
+
+    }
+
+    #navbar a {
+        display: none;
+    }
+
+    #navbar h4 {
+        flex-direction: row;
+    }
+
+    #center {
+        padding: 20px;
+        text-align: left;
+    }
+
+    #center h1 {
+        font-size: 28px;
+    }
+
+    #center-inside {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #center-inside p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    .elem a {
+        font-size: 16px;
+    }
+
+    .elem i {
+        font-size: 18px;
+    }
+
+    #bottom-image {
+        height: 36.8vh;
+        
+    }
+}
